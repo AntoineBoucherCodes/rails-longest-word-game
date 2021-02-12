@@ -1,0 +1,14 @@
+<h1>new game 👾</h1>
+
+<ul>
+  <% @letters.each do |letter| %>
+    <li><%= letter.capitalize %></li>
+  <% end %>
+</ul>
+
+<p>What is the longest word you can find?</p>
+
+<form action="/score" method="get">
+  <input input type="text" name="word">
+  <input type="submit">
+</form>
